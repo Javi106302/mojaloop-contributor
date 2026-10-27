@@ -81,14 +81,20 @@ Concepts:
 2. GitHub
 	a. organization 
 	b. repository
+	c. .gitignore - research 
 	c. commit - conventional commits
 	c. branches
 	d. PR - peer request
 	e. GitHub checks - GitHub actions
 	f. reviewers
 	g. merge
+	
 3. Circle CI
 4. markdown
 	a. markdownviewer.pages.dev
 	b. vs code preview 
 	c. README.md
+5. Secret scan 
+	a. GitLeaks https://github.com/gitleaks/gitleakshttps://github.com/gitleaks/gitleaks
+
+	Research how to install and use GitLeaks from the command line. After gitleaks finda a secret in a file you can add the filw to git.ignore. For example files like .env
