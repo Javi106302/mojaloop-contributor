@@ -22,7 +22,7 @@ Next install Node.js24 with the following command
 
 <img width="318" height="168" alt="image" src="https://github.com/user-attachments/assets/56599964-bebd-4c1d-87ce-fed86faf9a30" />
 
-Nect make it default and confirm. For this case it will display that its on version 24.22.1
+Next make it default and confirm. For this case it will display that its on version 24.22.1
 
 <img width="545" height="240" alt="image" src="https://github.com/user-attachments/assets/ff5d323a-74a6-446e-b587-5d000ee457bd" />
 
@@ -98,3 +98,8 @@ Concepts:
 	a. GitLeaks https://github.com/gitleaks/gitleakshttps://github.com/gitleaks/gitleaks
 
 	Research how to install and use GitLeaks from the command line. After gitleaks finda a secret in a file you can add the filw to git.ignore. For example files like .env
+
+6. Scrum - Agile project management framework commonly used in software developement Focuses on teamwork, accountability and iterative progress toward a specific goal through short cycles called sprints.In a scrum you will discuss:
+	a. What you worked on yesterday?
+	b. What are you working on today?
+	c. A blocker which means an obstacle or task that prevents you from completing a task and moving forward with a project.
