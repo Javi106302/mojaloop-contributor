@@ -97,6 +97,9 @@ To acces claude just type "claude" then press enter. (if its your first time ope
 	h. Finally when finished shut everything down to free up computers memory with this command.
 <img width="596" height="130" alt="image" src="https://github.com/user-attachments/assets/c860016d-a9a8-4637-9364-f3d8e65d5589" />
 
+11. Build and deploy a local quoting-service image
+	See [quoting-service-local-build.md](quoting-service-local-build.md) for the steps to clone quoting-service, build its Docker image locally and run it in ml-core-test-harness.
+
 
 Concepts:
 
