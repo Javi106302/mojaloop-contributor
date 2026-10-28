@@ -97,6 +97,24 @@ To acces claude just type "claude" then press enter. (if its your first time ope
 	h. Finally when finished shut everything down to free up computers memory with this command.
 <img width="596" height="130" alt="image" src="https://github.com/user-attachments/assets/c860016d-a9a8-4637-9364-f3d8e65d5589" />
 
+11. Build the quoting-service Docker image locally and deploy it in ml-core-test-harness
+    a. Clone the repo and switch to its Node version
+    <img width="612" height="326" alt="image" src="https://github.com/user-attachments/assets/9a488662-672d-454e-8719-abf9b149d9af" />
+	b. Biuld the image 
+<img width="593" height="159" alt="image" src="https://github.com/user-attachments/assets/31b494e6-be3b-46f2-af32-71e6360c4e33" />
+	c. Run your image in ml-core-test-harness.
+<img width="614" height="254" alt="image" src="https://github.com/user-attachments/assets/dcef44dc-2de2-409e-b92e-258624ce7d9c" />
+	d. Check that your image is the one running
+<img width="612" height="140" alt="image" src="https://github.com/user-attachments/assets/11a9d544-f61f-4c26-b7e4-db8ece758e43" />
+	e. After code changes, rebuild and restart only the quoting containers
+<img width="611" height="240" alt="image" src="https://github.com/user-attachments/assets/4b2db5a1-688a-4d5f-9ff1-95f8fe0fae0c" />
+	f. When done free up memory with the following command
+<img width="603" height="166" alt="image" src="https://github.com/user-attachments/assets/1cded2ea-bc02-495a-b137-2dbea20abd67" />
+
+
+
+
+
 
 Concepts:
 
