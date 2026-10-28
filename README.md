@@ -75,6 +75,29 @@ After installed verify that its installed and check if it has the latest version
 
 To acces claude just type "claude" then press enter. (if its your first time opening claude on ubuntu it will ask to log in with your account. It will open on your browser) To exit cluade type "/exit" then press ENTER. 
 
+10. ml-core-test-harness and Golden Path tests
+    a. Prepare WSL 2. Check with claude becuase setup depends on ram of computer
+    b. Connect Docker Desktop to Ubuntu. In Docker Desktop make sure it says engine running then go to settings then general then scroll to choose how to run docker containers and see if WSL 2 is checked then go to resourses then WSL integration and check the checkbox and enable ubuntu. then switch resources
+    c. In ubuntu clone ml-core-test-harnes then check if the files are there
+    <img width="610" height="377" alt="image" src="https://github.com/user-attachments/assets/dc528a66-143c-432b-b032-58449fb9e862" />
+	d. Do the smoke test: run a simple P2P transfer. (the first time takes 10 to 20 minutes because it downloads many images. Also it depends on your internet speeds)
+<img width="590" height="129" alt="image" src="https://github.com/user-attachments/assets/47fcf96f-7d65-4f43-bd1d-6bbb119b4d59" />
+	e. When test is finished and has 0 failed assertions shutdown the smoke test and clear up data.
+<img width="602" height="193" alt="image" src="https://github.com/user-attachments/assets/e5f3a1a3-c73d-4690-8f57-03d2819bf193" />
+	f. Run the golden path test (this takes 5 to 10 minutes to complete)
+<img width="590" height="137" alt="image" src="https://github.com/user-attachments/assets/0bf96ab1-c416-4272-87cd-947f1d88d8b3" />
+	Use this command to check the status. Whne both say Exited the test is complete
+<img width="616" height="183" alt="image" src="https://github.com/user-attachments/assets/25ddd2f3-201e-476a-a2af-d7967645695c" />
+	g.Open the reports on the Windows browser with this command
+<img width="626" height="185" alt="image" src="https://github.com/user-attachments/assets/5f14d6c5-bbf6-44c9-97a7-8aa3d9ae063d" />
+
+ 	This is what it will look like
+<img width="1594" height="736" alt="image" src="https://github.com/user-attachments/assets/348a3382-f3f3-4871-92fb-aa3efbfa23de" />
+
+	h. Finally when finished shut everything down to free up computers memory with this command.
+<img width="596" height="130" alt="image" src="https://github.com/user-attachments/assets/c860016d-a9a8-4637-9364-f3d8e65d5589" />
+
+
 Concepts:
 
 1. Semantic Version
@@ -103,3 +126,5 @@ Concepts:
 	a. What you worked on yesterday?
 	b. What are you working on today?
 	c. A blocker which means an obstacle or task that prevents you from completing a task and moving forward with a project.
+
+7. 
