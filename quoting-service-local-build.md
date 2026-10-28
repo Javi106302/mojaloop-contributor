@@ -100,7 +100,7 @@ QUOTING_SERVICE_VERSION=local docker compose --profile all-services --profile tt
 
 ## 5. Rebuild after code changes
 
-After you edit the quoting-service code, rebuild the image and recreate only the quoting containers. Leave the rest of the stack running:
+After you edit the quoting-service code, rebuild the image and recreate only the quoting containers. This only works while the rest of the stack (MySQL, Kafka, central-ledger) is still running from step 3. If you already ran `down -v`, start the whole stack again with the step 3 command instead, because `--no-deps` does not start the services quoting-service needs:
 
 ```bash
 cd ~/quoting-service
