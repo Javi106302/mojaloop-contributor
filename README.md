@@ -3,8 +3,10 @@
 ## Technology Stack and development setup:  
 
 ### Windows 11 (already installed)
+
 ### Git 
 1. GitHub desktop - For windows download through the github website. With ubuntu through WSL 2 it came included
+
 ### NodeJS version 24 latest (this includes nvm, .nvmrc and package.jason)
 	
 1. Install the pre requisites then install nvm using the official script. 
@@ -269,6 +271,7 @@ sudo apt update && sudo apt install claude-code
 
 
 
+---
 ### Load a test collection and run one request manually (Docker has to be openned and running)
 1. Open http://localhost:9660 and click Test Runner in the left menu.
    
@@ -303,10 +306,11 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
    <img width="520" height="137" alt="image" src="https://github.com/user-attachments/assets/a660e98e-ccb1-4feb-a734-2b97d28cad34" />
 
 
-
+---
 ## Concepts:
 
 ### Semantic Version
+
 ### GitHub
 	1. organization 
 	2. repository
