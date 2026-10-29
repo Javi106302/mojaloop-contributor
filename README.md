@@ -269,6 +269,41 @@ sudo apt update && sudo apt install claude-code
 
 
 
+### Load a test collection and run one request manually (Docker has to be openned and running)
+1. Open http://localhost:9660 and click Test Runner in the left menu.
+   
+3. CLick Collection Manager, then Import Folder
+   
+3. Pick this folder from your harness clone:
+docker/ml-testing-toolkit/test-cases/collections/tests
+Your browser runs on Windows and the files are in WSL, so open them through the WSL network path in the file picker:
+\\wsl$\Ubuntu\home\<your-ubuntu-user>\ml-core-test-harness\docker\ml-testing-toolkit\test-cases\collections\tests
+(Use Import File instead if you only want one .json file.)
+
+4. In the file tree, tick p2p.json. It’s the simplest collection.
+   
+5. Click the shaded area to the right of the panel to close Collection Manager. The test case now shows in the Test Runner.
+
+6. Run requests manually by either running the whole test case by clicking run at the top right or by one request at a time. The first image shows the results of an entire test. The seccond image shows the result of a manual request
+
+
+
+<img width="1598" height="729" alt="image" src="https://github.com/user-attachments/assets/20694885-6d0a-4135-ad9a-f8dd3e90c25e" />
+
+
+
+<img width="1590" height="735" alt="image" src="https://github.com/user-attachments/assets/b6b1b501-d2c8-4d36-8d03-0e825e5ef3e4" />
+
+
+
+7. When done shutdown to free up memory.
+
+
+
+   <img width="520" height="137" alt="image" src="https://github.com/user-attachments/assets/a660e98e-ccb1-4feb-a734-2b97d28cad34" />
+
+
+
 ## Concepts:
 
 ### Semantic Version
