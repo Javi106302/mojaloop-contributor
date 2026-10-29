@@ -219,6 +219,43 @@ sudo apt update && sudo apt install claude-code
 
 
 
+### Access the Testing Toolkit (TTK) from the browser in ml-core-test-harness
+
+1. Start the services in the background so the TTK stays up after the tests finish (the UI and backend are part of the "all-services" profile)
+
+       cd ~/ml-core-test-harness
+       docker compose --profile all-services --profile ttk-provisioning --profile ttk-tests up -d
+
+2. Check that the TTK containers are running. You should see "mojaloop-testing-toolkit-ui" (port 9660) and "mojaloop-testing-toolkit" (port 9550)
+
+       docker ps --filter "name=testing-toolkit"
+
+3. Wait until provisioning is done (the onboarding of the test DFSPs). When the summary shows 0 failed assertions the switch is ready
+
+       docker logs -f ml-core-test-harness-ttk-provisioning-1
+
+4. Open the Windows browser (Chrome or Edge) and go to http://localhost:9660. WSL 2 forwards localhost to Windows so no extra setup is needed. The UI talks to the TTK backend at http://localhost:9550
+
+5. Useful pages in the TTK UI:
+    - http://localhost:9660 - Main page
+    - http://localhost:9660/admin/reports - Test reports
+    - http://localhost:9660/mobilesimulator - Mobile simulator (sender and receiver phones with a live sequence diagram)
+
+6. Run the P2P transfer from the web interface
+    - Go to "Test Runner" then click "Collection Manager" then "Import Folder"
+    - Select the folder docker/ml-testing-toolkit/test-cases/collections/tests. From Windows the WSL files are at \\wsl$\Ubuntu\home\<your-ubuntu-user>\ml-core-test-harness (you can paste that path in the file picker address bar)
+    - Select p2p.json and click on the masked area on the right side of the screen to close the Collection Manager
+    - Click "Run" at the top right corner. All tests should pass. Click "Edit" next to a test case to see the requests and responses
+
+7. If the page does not load
+    - Make sure Docker Desktop says engine running and WSL integration is enabled for ubuntu
+    - Check the UI container logs with "docker logs mojaloop-testing-toolkit-ui"
+    - If localhost does not work, get the WSL IP with "hostname -I" and use http://<that-ip>:9660
+
+8. When done free up memory with the following command
+
+       docker compose --profile all-services --profile ttk-provisioning --profile ttk-tests down -v
+
 ## Concepts:
 
 ### Semantic Version
