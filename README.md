@@ -216,6 +216,56 @@ sudo apt update && sudo apt install claude-code
 
 <img width="603" height="166" alt="image" src="https://github.com/user-attachments/assets/1cded2ea-bc02-495a-b137-2dbea20abd67" />
 
+### Access the Testing Toolkit (TTK) from the browser in ml-core-test-harness
+1. Start the harness in the background (Docker Desktop has to be opened)
+
+
+
+   <img width="542" height="228" alt="image" src="https://github.com/user-attachments/assets/e72ae129-2265-48a2-b18c-1322c93b33a4" />
+
+   
+
+2. Check that the TTK containers are up 
+
+
+
+<img width="529" height="100" alt="image" src="https://github.com/user-attachments/assets/d98a46b6-d123-4fac-87ab-183290bc5bbe" />
+
+
+
+3. Wait for the setup to finish. This is the step that registers the test banks (DFSPs). When its summary shows 0 failed assertions, the switch is ready.
+
+
+
+   <img width="518" height="84" alt="image" src="https://github.com/user-attachments/assets/cf7029d9-7dc0-4067-8a66-65a6ec307d3a" />
+
+
+
+6. Open http://localhost:9660 in your browser
+
+
+
+<img width="1599" height="727" alt="image" src="https://github.com/user-attachments/assets/1c0338f6-6861-4966-a528-c562e8ff6054" />
+
+
+   
+8. Run the P2P transfor from the browser
+
+
+
+<img width="675" height="251" alt="image" src="https://github.com/user-attachments/assets/cae99ff8-96ab-4721-bf34-0abaca248691" />
+
+
+
+<img width="1587" height="735" alt="image" src="https://github.com/user-attachments/assets/c4497d17-760d-4adf-9af0-61ce5ae0befc" />
+
+
+
+10. When done shut down to free up memory
+
+
+	
+<img width="553" height="174" alt="image" src="https://github.com/user-attachments/assets/52b8d67b-49b2-47bd-bee1-19e705d9d8e2" />
 
 
 
@@ -249,4 +299,3 @@ sudo apt update && sudo apt install claude-code
 	2. What are you working on today?
 	3. A blocker which means an obstacle or task that prevents you from completing a task and moving forward with a project.
 
-7. 
