@@ -306,6 +306,16 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
    <img width="520" height="137" alt="image" src="https://github.com/user-attachments/assets/a660e98e-ccb1-4feb-a734-2b97d28cad34" />
 
 
+
+### ci-config-orb-biuld
+1. For this you have to clone orb ad quoting service repos
+
+
+
+<img width="511" height="225" alt="image" src="https://github.com/user-attachments/assets/c7ff9e03-3dac-4629-94a1-a3f5868ac9e8" />
+
+
+
 ---
 ## Concepts:
 
