@@ -316,6 +316,37 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 
 
 
+### Adding one new test on the TTk for the quotiing-service
+1. Fork mojaloop/testing-toolkit-test-cases, clone the fork and create a branch.
+2. Now change directory to testing-toolkit-test-cases
+3. Link it to the original repo so that ic call pull the updates later
+
+
+
+   <img width="584" height="130" alt="image" src="https://github.com/user-attachments/assets/66843e9a-d0aa-438a-930a-391ea8237842" />
+
+
+
+4. Create a branh for your test
+
+
+
+   <img width="580" height="98" alt="image" src="https://github.com/user-attachments/assets/b2a88904-cd43-468f-8f79-6a2200b0fffa" />
+
+   
+
+5. Open it in VS code and follow claude instructions
+6. Run it in the TTk UI. (you have to have Docker running)
+
+
+
+   <img width="1595" height="732" alt="image" src="https://github.com/user-attachments/assets/3426e207-245d-4e0e-a22e-69d9b1c7eb4d" />
+
+
+
+7. Commit, push to your fork and open a PR against mojaloop/testing-toolkit-test-cases. You don’t need to edit master.json, because the file is already in a folder it includes.
+
+   
 ---
 ## Concepts:
 
@@ -332,6 +363,7 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 	8. reviewers
 	9. merge
 	10. markdown
+	11. fork
 	
 ### Circle CI
 ### markdown
