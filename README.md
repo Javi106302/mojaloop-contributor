@@ -461,6 +461,45 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 
 
 
+### ### api-snippet libraries updates and vulnerabilities with quoting service
+1. This can be done with claude. Ask claude at it will determine how to do it based on you situation. This can take time because the quoting service is big and has more pins. These are the steps for my case
+2. Get the latest files from the contributor repo with this command: "cd ~/mojaloop-contributor && git pull origin claude/happy-tesla-60hu3g".
+3. Fork mojaloop/guoting-service on github then clone it.
+
+
+
+   <img width="552" height="439" alt="image" src="https://github.com/user-attachments/assets/61b68c09-0d74-481f-8237-2db4c8b57497" />
+
+
+
+4. Now install with this command: "nvm install && nvm use && npm ci".
+5. Now apply the patch. Make sure you do this before updating.
+
+
+
+   <img width="542" height="132" alt="image" src="https://github.com/user-attachments/assets/0b166b5f-9b3d-4b55-9243-53564952f331" />
+
+   
+
+6. Now update the libraries with this command: "npx npm-check-updates -u".
+7. Now apply the overrides.
+
+
+
+   <img width="578" height="483" alt="image" src="https://github.com/user-attachments/assets/931c9fba-e865-4f96-a332-a4ee4410914e" />
+
+
+
+8. Now reinstall and fix with this command: "rm -rf node_modules && npm install && npm audit fix".
+9. Use this command to verify: "npm run audit:check && npm run dep:check && npm run lint && npm run test:unit".
+10. Finally commit and push
+
+
+
+	<img width="553" height="277" alt="image" src="https://github.com/user-attachments/assets/fea483e1-7af9-4d3d-8767-5ae56714e47c" />
+
+
+
 ---
 ## Concepts:
 
