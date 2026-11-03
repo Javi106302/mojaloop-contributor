@@ -346,7 +346,77 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 
 7. Commit, push to your fork and open a PR against mojaloop/testing-toolkit-test-cases. You don’t need to edit master.json, because the file is already in a folder it includes.
 
+
+
+### api-snippet libraries updates and vulnerabilities. 
+1. First ask claude the following message "I need to clone api-snippet then update libraries then patch vulnerabilities. I can use previous PRs as reference and i have to create a new PR. Can yoy tell me how to do all of this?' it will check for any vilnerabilites and determine the best possible way to do this based on your case. The steps are based on my case
+
+2. Create a new for =k by going to this page "https://github.com/mojaloop/api-snippets", then click Fork. You can leave 'Copy the main branch only" as checked. Then click Create Fork.
+
+3. Now clone it on Ubuntu and change directory to api-snippets
+
+
+
+<img width="1108" height="198" alt="image" src="https://github.com/user-attachments/assets/87e59dc3-e9af-4ed4-8224-6e16956d6d45" />
+
+
+
+4. Link to the original repo so that you can pull the updates
+
+
+
+<img width="531" height="376" alt="image" src="https://github.com/user-attachments/assets/d07b5a18-612a-4639-b10a-a8c56195b857" />
+
+
+
+<img width="1117" height="117" alt="image" src="https://github.com/user-attachments/assets/e83c8d69-4d5b-43cd-9858-3904dede6e75" />
+
+
+
+5. Create your working branh from the latest mojaloop code by using this command: "git checkout -b chore/update-deps-security upstream/main". This will create a new branch and move you onto it.
    
+6. Switch to the right node versio and install.
+
+
+
+   <img width="527" height="167" alt="image" src="https://github.com/user-attachments/assets/506eb0cb-00f3-471c-896c-76d3d3563907" />
+
+
+
+7. Update the libraries
+
+
+
+   <img width="499" height="246" alt="image" src="https://github.com/user-attachments/assets/02aa8948-0611-411a-92ac-b131596ff6b3" />
+
+
+
+8. Patch the vulnerabilities(if any problems happen follow claudes instructions as problems can occur)
+
+
+  <img width="548" height="166" alt="image" src="https://github.com/user-attachments/assets/30c6376f-b89e-41da-9135-e5f1a72122b2" />
+
+
+
+9. Now make usre nothing broke. When all of the tests pass run git status
+
+
+<img width="554" height="250" alt="image" src="https://github.com/user-attachments/assets/3bd2eaac-a8d3-4f0f-a208-38683d7325b8" />
+
+
+
+10. Bump Node and the CircleCI orb, as PRs with this command: nvm install && nvm use. Then repeat step 9.
+
+11. Comit and push your fork
+
+
+
+	<img width="585" height="328" alt="image" src="https://github.com/user-attachments/assets/af745c0b-3a43-47a6-9c74-d89e067dee51" />
+
+
+
+12. On the PR. Go to https://github.com/Javi106302/api-snippets and click "Compare & pull request". Make sure the base is mojaloop/api-snippets main.
+
 ---
 ## Concepts:
 
