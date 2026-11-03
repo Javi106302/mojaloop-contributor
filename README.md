@@ -417,6 +417,50 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 
 12. On the PR. Go to https://github.com/Javi106302/api-snippets and click "Compare & pull request". Make sure the base is mojaloop/api-snippets main.
 
+
+13. You can do the same with claude with the following repos: ml-number, database-lib, central-services-logger, central-services-metrics, central-services-error-handling and ml-testing-toolkit-share-lib. Claude in my case did most of the job automatically. Here are some aditional steps that it told me to do based on my case.
+
+14. Get the script with the following command "cd ~/mojaloop-contributor && git fetch origin claude/happy-tesla-60hu3g && git checkout claude/happy-tesla-60hu3g"
+15. For each of the repos first Fork on GitHub. Go to https://github.com/mojaloop/REPO and click Fork. Then:
+
+
+
+	<img width="522" height="371" alt="image" src="https://github.com/user-attachments/assets/a4495627-96e3-410b-be31-4879f5f4f55e" />
+
+
+
+16. Update the libraries
+
+
+
+<img width="526" height="180" alt="image" src="https://github.com/user-attachments/assets/d071a482-06ae-4d4f-b29e-eb705f3076c1" />
+
+
+
+17. Patch the vulnerabilities
+
+
+
+<img width="605" height="377" alt="image" src="https://github.com/user-attachments/assets/541f0c00-f56d-4e63-9f1f-63c068bc7631" />
+
+
+
+18. Verify
+
+
+
+<img width="508" height="159" alt="image" src="https://github.com/user-attachments/assets/30022b88-9e64-4c4f-b4e2-2771d163e70e" />
+
+
+
+19. Commit, push and open the PR the same way as api-snippets:
+
+
+	
+	<img width="546" height="277" alt="image" src="https://github.com/user-attachments/assets/6ba327bb-e17e-4b4a-8bde-c9adf1e127f8" />
+
+
+
 ---
 ## Concepts:
 
