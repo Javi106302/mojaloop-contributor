@@ -461,7 +461,7 @@ Your browser runs on Windows and the files are in WSL, so open them through the 
 
 
 
-### ### api-snippet libraries updates and vulnerabilities with quoting service
+### api-snippet libraries updates and vulnerabilities with quoting service
 1. This can be done with claude. Ask claude at it will determine how to do it based on you situation. This can take time because the quoting service is big and has more pins. These are the steps for my case
 2. Get the latest files from the contributor repo with this command: "cd ~/mojaloop-contributor && git pull origin claude/happy-tesla-60hu3g".
 3. Fork mojaloop/guoting-service on github then clone it.
